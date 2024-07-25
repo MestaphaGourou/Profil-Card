@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "MoMontserrat",sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #4070f4;
+    border-radius: 50% ;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.profile-card{
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow:  0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    padding :25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data .name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+.text-data .job{
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 8px;
+    width: 34px;
+    height: 34px;
+    background-color: #4070f4;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #333;
+    
+}
+.link:nth-of-type(1){
+    background-color: #0866ff;
+    color: #fff;
+}
+.link:nth-of-type(2){
+    color: #fff;
+    background-image: linear-gradient(#e5009e,#fe692c) ;
+    
+}
+.link:nth-of-type(3){
+    color: #ffffff;
+    background-color: #5865f2;
+}
+.link:nth-of-type(4){
+    color: #fff;
+    background-color: #4cca5c;
+}
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.buttons .button{
+    background-color: #4070f4;
+    margin: 0 10px;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 24px ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover{
+    background-color: #0866ff;
+}
+.statistique {
+    display: flex;
+    padding-top: 35px;
+    color: #333;
+    font-size: 0.9rem;
+    
+}
+.statistique .data{
+    border-right: #333 1px solid;
+    padding: 2px 10px;
+    margin-right: 10px;
+}
+
+.statistique .data:nth-of-type(3){
+    border-right: none;
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background-color: #4070f4;
+    top: 0;
+    left:0;
+    border-radius: 24px 24px 0 0 ;
+}
+
+
+
+
+
